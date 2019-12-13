@@ -1,12 +1,66 @@
 
+//CSS RESET
 @import 'reset';
 
+//Fonts
 
-
+@font-face {
+	font-family: "BatonTurboWeb";
+	src: url("/dist/Webfonts/BatonTurboWeb-Book.woff") format("woff"),
+		 url("/dist/Webfonts/BatonTurboWeb-Book.eot") format("eot");
+  }
 * {
 	box-sizing: border-box;
 }
 
 body {
-	background: #ccc;
+	background: #000;
 }
+
+
+/////////////////////Header Styles///////////////////@at-root
+
+
+header {
+	margin: 20px auto;
+	border: 1px solid red;
+	text-align: center;
+	font-family: "BatonTurboWeb";
+	
+	ul{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		a {
+			text-decoration: none;
+			color: white;
+			position: relative;
+			border-bottom: 1px solid green;
+			width: 25%;
+
+		}
+		a:after {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 100%;
+			width: 100%;
+			height: 20px;
+			background: chocolate;
+		}
+	}
+
+}
+
+
+///Media Queries
+@media only screen and (min-width: 1000px) {
+	body {
+	  background-color: lightblue
+	}
+
+	header {
+		max-width: 1200px;
+
+	}
+  }
