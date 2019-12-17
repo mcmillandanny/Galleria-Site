@@ -1,4 +1,10 @@
 
+//COLORS
+/*black: #000000
+blue: #78BFEA
+darker blue (for rollovers?): #417B9D
+*/
+
 //CSS RESET
 @import 'reset';
 
@@ -14,20 +20,28 @@
 }
 
 body {
-	background: #000;
+	background: #000000;
+
+}
+
+a:hover {
+	text-decoration: none;
 }
 
 
 /////////////////////Header Styles///////////////////@at-root
 
+.content {
+	max-width: 1200px;
+	margin: auto;
+}
 
 header {
 	margin: 20px auto;
-	border: 1px solid red;
 	text-align: center;
 	font-family: "BatonTurboWeb";
 	
-	ul{
+	ul {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -37,6 +51,7 @@ header {
 			position: relative;
 			border-bottom: 1px solid green;
 			width: 25%;
+			font-size: .65rem;
 
 		}
 		a:after {
@@ -45,22 +60,406 @@ header {
 			left: 0;
 			top: 100%;
 			width: 100%;
-			height: 20px;
-			background: chocolate;
+			height: 5px;
+			background: #78BFEA;
+		}
+
+		li {
+			padding: 10px;
 		}
 	}
 
 }
 
+.hero-wrap {
+	width: 100%;
+	position: relative;
+	margin-bottom: 20px;
 
-///Media Queries
-@media only screen and (min-width: 1000px) {
-	body {
-	  background-color: lightblue
+	.galleria-remixed {
+		position: absolute;
+		top: 0%;
+		left: 0;
+		width: 25%;
+		border: 1px solid red;
+		display: none;
 	}
+
+	.hero-blurb {
+		width: 100%;
+		padding: 10px;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		font-family: "BatonTurboWeb";
+
+
+			p {
+			font-size: 1.8rem;
+			margin: 5px 0px;
+			color: white;
+		}
+
+		span {
+			color: #78BFEA;
+		}
+	}
+
+	.hero-copy {
+		width: 100%;
+		margin: auto;
+		padding: 10px;
+		color: white;
+
+		p {
+			font-size: 1.05rem;
+			line-height: 1.2; 
+			letter-spacing: .1em;
+		}
+
+		span {
+			color: #78BFEA;
+		}
+	}
+}
+
+
+#img-carousel {
+	margin-bottom: 20px;
+
+	.carousel-indicators li {
+		border-radius: 50%;
+		height: 12px;
+		width: 12px;
+	}
+
+	.carousel-caption {
+		left: 0%;
+		right: 80%;
+		text-align: left;
+		padding: 30px 20px;
+		background: rgba(0, 0, 0, 0.4);
+		bottom: 0px;
+		width: 26%;
+
+		h5 {
+			color: #78BFEA;
+			width: 30%;
+		}
+	}
+}
+
+.building-nav {
+	background: white;
+	width: 100%;
+
+	h3 {
+		color: #78BFEA;
+
+	}
+
+	span {
+		color: #000000;
+	}
+
+	.build-wrap {
+		padding: 10px;
+
+		.bld-200, .bld-300, .bld-600 {
+			padding: 20px 0px;
+			font-family: "BatonTurboWeb";
+
+		}
+
+		.bld-img-wrap {
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		.image-2, .image-3 {
+			display: none;
+		}
+
+		.learn-more {
+			padding: 10px 0px;
+			border-bottom: 1px solid  #78BFEA;
+			font-family: "BatonTurboWeb";
+
+		}
+	}
+
+	.and-more-section {
+		width: 100%;
+		margin-top: 5px;
+		font-family: "BatonTurboWeb";
+
+		span {
+			color: #000000;
+		}
+		
+		p {
+			font-family: "BatonTurboWeb";
+			color: #78BFEA;
+			padding: 20px 10px 30px 10px;
+			letter-spacing: .05em;
+			line-height: 1.2em;
+		}
+	}
+}
+
+.announcements {
+	background: white;
+	margin-top: 40px;
+	width: 100%;
+
+	h1 {
+		padding: 10px;
+		background: #78BFEA;
+		font-family: "BatonTurboWeb";
+		border-bottom: 1px solid black;
+	}
+
+	.announcements-text {
+		padding: 20px 10px;
+		margin-top: 5px;
+		font-family: "BatonTurboWeb";
+	}
+
+	span {
+		color: #000000;
+	}
+
+	p {
+		letter-spacing: .03em;
+	}
+
+	h4 {
+		color: #78BFEA;
+		margin-bottom: 10px;
+	}
+	a {
+		padding: 5px 0px;
+		display: block;
+	}
+}
+
+
+.owners-section {
+	background: white;
+	margin-top: 40px;
+	width: 100%;
+
+	h1 {
+		padding: 10px;
+		background: #78BFEA;
+		font-family: "BatonTurboWeb";
+		border-bottom: 1px solid black;
+	}
+
+
+	.owners-text {
+		padding: 20px 10px;
+		margin-top: 5px;
+		font-family: "BatonTurboWeb";
+
+		.img-wrap-owners {
+			width: 100%;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		span {
+			color: #000000;
+		}
+
+		p {
+			letter-spacing: .03em;
+			line-height: 1.2em;
+			padding: 20px 0px;
+			text-overflow: initial;
+		}
+
+		h4 {
+			color: #78BFEA;
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.above-footer-img {
+	width: 100%;
+	margin: 40px 0px;
+
+	img {
+		width: 100%;
+	}
+}
+
+footer {
+	width: 100%;
+	background: #78BFEA;
+
+
+	h2 {
+		font-family: "BatonTurboWeb";
+		font-size: 2rem;
+		width: 70%;
+		padding: 10px;
+
+	}
+	
+	.input-wrap {
+		width: 80%;
+		margin: auto;
+		padding: 20px 0px;
+
+		input {
+			border: 1px solid white;
+			padding: 20px;
+			background: #78BFEA;
+			color: #000000;
+			width: 100%;
+			outline: none;
+			resize: horizontal;
+			margin-bottom: 20px;
+		}
+		::placeholder {
+			color: #000000;
+			font-family: "BatonTurboWeb";
+			font-size: .8rem;
+		}
+
+		button {
+			float: right;
+			margin-bottom: 40px;
+			outline: none;
+			background: #000000;
+			color: white;
+			font-family: "BatonTurboWeb";
+			padding: 10px 20px;
+			border: 1px solid black;
+		}
+	}
+
+	.footer-contact {
+		clear: both;
+		padding: 10px;
+		width: 100%;
+		background: #000000;
+		font-family: "BatonTurboWeb";
+
+		.footer-contact-img {
+			display: inline-block;
+			vertical-align: top;
+			width: 40%;
+			margin: 1em 1em 1em 0;
+			
+			img {
+				width: 100%;
+			}
+		}
+		
+
+		.company-info {
+			display: inline-block;
+			width: 50%;
+			padding: 10px;
+			margin-left: 20px;
+			
+
+			span {
+				color: #78BFEA;
+			}
+
+			p {
+				color: white;
+				font-family: "BatonTurboWeb";
+
+			}
+		}
+
+		.owner-info-footer {
+			width: 70%;
+			margin: 20px auto;
+			span {
+				color: #78BFEA;
+			}
+
+			p {
+				color: white;
+				margin-bottom: 5px;
+				font-family: "BatonTurboWeb";
+
+			}
+		}
+
+		.owner-logo {
+			width: 100%;
+
+			img {
+				width: 30%;
+				margin: auto;
+				display: block;
+			}
+		}
+
+		.mailing-list {
+			width: 100%;
+			position: relative;
+			margin: 40px auto;
+
+			input {
+				width: 70%;
+				margin: auto;
+				background: #000000;
+				border: 1px solid white;
+				outline: none;
+				padding: 4.5px 15px;
+			}
+
+			::placeholder {
+				font-family: "BatonTurboWeb";
+				font-size: .8em;
+				color: white;
+			}
+
+			button {
+				background: #78BFEA;
+				color: black;
+				padding: 8px 15px; 
+				outline: none;
+				border: 1px solid white;
+				position: absolute;
+				font-size: .8em;
+			}
+		}
+	}
+}
+
+
+///Media Queries///////
+
+@media only screen and (min-width: 512px) {
 
 	header {
-		max-width: 1200px;
-
+		
+		ul {
+			a {
+				font-size: 1rem;
+			}
+		}
 	}
   }
+
+
+@media only screen and (min-width: 1000px) {
+
+}
