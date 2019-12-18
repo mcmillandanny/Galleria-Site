@@ -49,19 +49,79 @@ header {
 			text-decoration: none;
 			color: white;
 			position: relative;
-			border-bottom: 1px solid green;
 			width: 25%;
 			font-size: .65rem;
 
 		}
-		a:after {
+		
+		.nav-bar-blue {
+			position: absolute;
+			left: 0%;
+			top: 7%;
+			width: 25%;
+			height: 5px;
+			background: white;
+			z-index: 10;
+		}
+
+		.nav-bar-blue:hover {
+			background: #78BFEA;
+		}
+		.nav-btn1:after {
 			content: '';
 			position: absolute;
 			left: 0;
 			top: 100%;
 			width: 100%;
 			height: 5px;
+			background: white;
+		}
+
+		.nav-btn2:after {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 100%;
+			width: 100%;
+			height: 5px;
+			background: white;
+		}
+
+		.nav-btn3:after {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 100%;
+			width: 100%;
+			height: 5px;
+			background: white;
+		}
+
+		.nav-btn4:after {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 100%;
+			width: 100%;
+			height: 5px;
+			background: white;
+		}
+
+		.nav-btn1:hover:after, .nav-btn2:hover:after, .nav-btn3:hover:after, .nav-btn4:hover:after {
 			background: #78BFEA;
+		}
+
+		a:active {
+			color: #78BFEA;
+		}
+
+		.active {
+			color: #78BFEA;
+		}
+
+		a:hover {
+			color: #78BFEA;
+
 		}
 
 		li {
