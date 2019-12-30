@@ -79,9 +79,12 @@ a:hover {
 }
 
 header {
-	margin: 20px auto;
 	text-align: center;
 	font-family: "BatonTurboWeb";
+	z-index: 2;
+	width: 100%;
+	max-width: 1200px;
+	margin: 20px auto;
 }
 
 header ul {
@@ -183,14 +186,13 @@ header ul li {
 }
 
 .hero-wrap .galleria-remixed {
-	width: 40%;
 	color: white;
 	font-size: 1.8rem;
 	font-family: "BatonTurboWeb";
 }
 
 .hero-wrap .galleria-remixed h1 {
-	padding: 10px;
+	padding: 0px 10px;
 }
 
 .hero-wrap .hero-blurb {
@@ -226,15 +228,18 @@ header ul li {
 .hero-wrap .hero-copy p {
 	font-size: .9rem;
 	line-height: 1.2;
-	letter-spacing: .1em;
 }
 
 .hero-wrap .hero-copy span {
 	color: #78BFEA;
 }
 
+.hero-wrap .hero-copy .margin-text {
+	margin-top: 30px;
+}
+
 #img-carousel {
-	margin-bottom: 20px;
+	margin-top: 50px;
 }
 
 #img-carousel .carousel-indicators li {
@@ -248,7 +253,7 @@ header ul li {
 	right: 80%;
 	text-align: left;
 	padding: 30px 20px;
-	background: rgba(0, 0, 0, 0.4);
+	background: rgba(85, 83, 83, 0.4);
 	bottom: 0px;
 	width: 26%;
 }
@@ -256,13 +261,15 @@ header ul li {
 #img-carousel .carousel-caption h5 {
 	color: #78BFEA;
 	font-family: "BatonTurboWeb";
-	width: 30%;
+	width: 100%;
+	font-size: 2rem;
 }
 
 .building-nav {
 	background: white;
 	width: 100%;
 	font-family: "BatonTurboWeb";
+	margin-top: 40px;
 }
 
 .building-nav h3 {
@@ -273,18 +280,15 @@ header ul li {
 	color: #000000;
 }
 
-.building-nav .build-wrap {
-	padding: 10px;
-}
-
 .building-nav .build-wrap .bld-200, .building-nav .build-wrap .bld-300, .building-nav .build-wrap .bld-600 {
-	padding: 20px 0px;
+	padding: 10px;
 	font-family: "BatonTurboWeb";
+	line-height: 1.2;
 }
 
 .building-nav .build-wrap .bld-200-copy, .building-nav .build-wrap .bld-300-copy {
 	margin-bottom: 10px;
-	line-height: 1.1;
+	line-height: 1.3;
 }
 
 .building-nav .build-wrap .features-wrap {
@@ -307,11 +311,12 @@ header ul li {
 	-webkit-box-direction: normal;
 	        flex-direction: column;
 	width: 100%;
+	padding: 5px;
 }
 
 .building-nav .build-wrap .bld-img-wrap img {
 	width: 100%;
-	padding: 10px;
+	padding: 5px;
 }
 
 .building-nav .build-wrap .bld-img-wrap p {
@@ -319,7 +324,7 @@ header ul li {
 }
 
 .building-nav .build-wrap .learn-more {
-	padding: 10px 0px;
+	padding: 10px 10px;
 	border-bottom: 1px solid  #78BFEA;
 	font-family: "BatonTurboWeb";
 }
@@ -338,8 +343,7 @@ header ul li {
 	font-family: "BatonTurboWeb";
 	color: #78BFEA;
 	padding: 20px 10px 30px 10px;
-	letter-spacing: .05em;
-	line-height: 1.2em;
+	line-height: 1.3em;
 }
 
 .announcements {
@@ -352,13 +356,13 @@ header ul li {
 	padding: 10px;
 	background: #78BFEA;
 	font-family: "BatonTurboWeb";
-	border-bottom: 1px solid black;
 }
 
 .announcements .announcements-text {
-	padding: 20px 10px;
+	padding: 40px 10px;
 	margin-top: 5px;
 	font-family: "BatonTurboWeb";
+	line-height: 1.2;
 }
 
 .announcements span {
@@ -366,7 +370,11 @@ header ul li {
 }
 
 .announcements p {
-	letter-spacing: .03em;
+	padding: 20px 0px;
+}
+
+.announcements li {
+	padding: 5px 10px;
 }
 
 .announcements h4 {
@@ -389,11 +397,10 @@ header ul li {
 	padding: 10px;
 	background: #78BFEA;
 	font-family: "BatonTurboWeb";
-	border-bottom: 1px solid black;
 }
 
 .owners-section .owners-text {
-	padding: 20px 10px;
+	padding: 40px 10px;
 	margin-top: 5px;
 	font-family: "BatonTurboWeb";
 }
@@ -411,7 +418,6 @@ header ul li {
 }
 
 .owners-section .owners-text p {
-	letter-spacing: .03em;
 	line-height: 1.2em;
 	padding: 20px 0px;
 	text-overflow: initial;
@@ -451,10 +457,10 @@ footer .input-wrap {
 
 footer .input-wrap input {
 	border: 1px solid white;
-	padding: 20px;
 	background: #78BFEA;
 	color: #000000;
 	width: 100%;
+	height: 45px;
 	outline: none;
 	resize: horizontal;
 	margin-bottom: 20px;
@@ -497,7 +503,7 @@ footer .input-wrap button {
 	background: #000000;
 	color: white;
 	font-family: "BatonTurboWeb";
-	padding: 10px 20px;
+	padding: 10px 30px;
 	border: 1px solid black;
 }
 
@@ -509,11 +515,19 @@ footer .footer-contact {
 	font-family: "BatonTurboWeb";
 }
 
+footer .footer-contact a {
+	color: white;
+}
+
+footer .footer-contact a:hover {
+	color: #78BFEA;
+}
+
 footer .footer-contact .footer-contact-img {
 	display: inline-block;
 	vertical-align: top;
 	width: 35%;
-	margin: 1em 1em 1em 0;
+	margin: 1em 1em 1em 1em;
 }
 
 footer .footer-contact .footer-contact-img img {
@@ -521,18 +535,23 @@ footer .footer-contact .footer-contact-img img {
 }
 
 footer .footer-contact .company-info {
+	display: none;
+}
+
+footer .footer-contact .company-info-mobile {
 	display: inline-block;
 	width: 51%;
 	padding: 10px;
 	margin-left: 20px;
 	font-size: .9em;
+	margin: 1em 1em 1em 0;
 }
 
-footer .footer-contact .company-info span {
+footer .footer-contact .company-info-mobile span {
 	color: #78BFEA;
 }
 
-footer .footer-contact .company-info p {
+footer .footer-contact .company-info-mobile p {
 	color: white;
 	font-family: "BatonTurboWeb";
 }
@@ -547,6 +566,7 @@ footer .footer-contact .owner-info-footer span {
 }
 
 footer .footer-contact .owner-info-footer p {
+	text-align: center;
 	color: white;
 	margin-bottom: 5px;
 	font-family: "BatonTurboWeb";
@@ -554,27 +574,30 @@ footer .footer-contact .owner-info-footer p {
 
 footer .footer-contact .owner-logo {
 	width: 100%;
+	text-align: center;
 }
 
 footer .footer-contact .owner-logo img {
-	width: 30%;
-	margin: auto;
+	width: 40%;
+	margin: 80px auto;
 	display: block;
+	clear: both;
 }
 
 footer .footer-contact .mailing-list {
-	width: 100%;
+	width: 80%;
 	position: relative;
 	margin: 40px auto;
 }
 
 footer .footer-contact .mailing-list input {
-	width: 70%;
+	width: 100%;
 	margin: auto;
 	background: #000000;
 	border: 1px solid white;
 	outline: none;
 	padding: 8.7px 15px;
+	color: white;
 }
 
 footer .footer-contact .mailing-list ::-webkit-input-placeholder {
@@ -607,24 +630,28 @@ footer .footer-contact .mailing-list ::placeholder {
 	color: white;
 }
 
-footer .footer-contact .mailing-list button {
+footer .footer-contact .mailing-list .button {
 	background: #78BFEA;
 	color: black;
-	padding: 8px 15px;
+	padding: 12px 15px;
 	outline: none;
 	border: 1px solid white;
-	position: absolute;
 	font-size: .8em;
+}
+
+footer .footer-contact .mailing-list .clear {
+	width: 30%;
+	float: right;
 }
 
 @media only screen and (min-width: 768px) {
 	header ul a {
-		font-size: 1.5rem;
+		font-size: 1.1rem;
 	}
 	.hero-wrap .galleria-remixed {
 		width: 20%;
 		position: absolute;
-		font-size: 1.5rem;
+		font-size: 2rem;
 	}
 	.hero-wrap .hero-blurb {
 		-webkit-box-align: center;
@@ -632,11 +659,211 @@ footer .footer-contact .mailing-list button {
 	}
 	.hero-wrap .hero-blurb .text-wrap-hero {
 		margin-top: 40px;
+		width: 55%;
+		padding: 0px 20px;
+		margin: auto;
 	}
 	.hero-wrap .hero-blurb h4 {
-		font-size: 3rem;
-		margin-bottom: 20px;
+		font-size: 3.9rem;
+		margin-bottom: 10px;
 		color: white;
+	}
+	.hero-wrap .hero-copy {
+		width: 55%;
+		margin: auto;
+		padding: 10px 20px;
+	}
+	.building-nav {
+		padding: 10px;
+	}
+	.building-nav .build-wrap .bld-200, .building-nav .build-wrap .bld-300 {
+		width: 51%;
+		font-size: 2rem;
+		padding: 20px;
+	}
+	.building-nav .build-wrap .bld-img-wrap {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		        flex-direction: row;
+		width: 33%;
+		margin-left: 10px;
+	}
+	.building-nav .build-wrap .learn-more {
+		padding: 0px 0px 20px 0px;
+		margin: 20px 20px;
+	}
+	.building-nav .and-more-section {
+		width: 70%;
+		padding: 10px;
+		font-size: 1.5rem;
+	}
+	.announcements h1 {
+		font-size: 1.2rem;
+		padding: 12px 20px;
+	}
+	.announcements h4 {
+		font-size: 1.3rem;
+		padding: 10px;
+	}
+	.announcements p {
+		width: 50%;
+		padding: 10px;
+	}
+	.announcements a {
+		padding: 10px;
+	}
+	.owners-section {
+		position: relative;
+	}
+	.owners-section h1 {
+		font-size: 1.2rem;
+		padding: 12px 20px;
+	}
+	.owners-section .owners-text a {
+		position: absolute;
+		left: 33%;
+		top: 86%;
+	}
+	.owners-section .owners-text h4 {
+		font-size: 1.3rem;
+		padding: 10px;
+	}
+	.owners-section .owner-wrap {
+		position: relative;
+		display: -webkit-box;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		        flex-direction: row;
+		margin: 20px 10px 20px 10px;
+	}
+	.owners-section .owner-wrap p {
+		padding: 0px;
+		line-height: 1.2;
+		width: 70%;
+	}
+	.owners-section .owner-wrap .img-wrap-owners {
+		margin-right: 20px;
+		width: 30%;
+	}
+	.mixtap-section {
+		height: 280px;
+		position: relative;
+	}
+	.mixtap-section .mixtape-wrap {
+		padding-top: 20px;
+	}
+	.mixtap-section .mixtape-wrap h2 {
+		width: 30%;
+		padding: 20px;
+		display: inline-block;
+		vertical-align: top;
+		margin-left: 20px;
+	}
+	.mixtap-section .mixtape-wrap .input-wrap {
+		width: 65%;
+		display: inline-block;
+	}
+	.mixtap-section .mixtape-wrap .input-wrap input {
+		height: 150px;
+		width: 100%;
+	}
+	.mixtap-section .mixtape-wrap .input-wrap input::-webkit-input-placeholder {
+		padding: 20px;
+	}
+	.mixtap-section .mixtape-wrap .input-wrap input::-moz-placeholder {
+		padding: 20px;
+	}
+	.mixtap-section .mixtape-wrap .input-wrap input:-ms-input-placeholder {
+		padding: 20px;
+	}
+	.mixtap-section .mixtape-wrap .input-wrap input::-ms-input-placeholder {
+		padding: 20px;
+	}
+	.mixtap-section .mixtape-wrap .input-wrap input::placeholder {
+		padding: 20px;
+	}
+	footer .footer-contact {
+		height: 200px;
+		display: -webkit-box;
+		display: flex;
+		padding: 0px;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		        flex-direction: row;
+	}
+	footer .footer-contact .footer-contact-img {
+		width: 33%;
+		margin: 10px auto;
+	}
+	footer .footer-contact .footer-contact-img img {
+		width: 90%;
+		padding: 0px 20px;
+	}
+	footer .footer-contact .mailing-list button {
+		padding: 12px 15px;
+	}
+	footer .footer-contact .company-info-mobile {
+		display: none;
+	}
+	footer .company-wrap {
+		text-align: left;
+		width: 33%;
+		margin: 10px auto;
+		font-size: .9rem;
+		line-height: 1.2;
+	}
+	footer .company-wrap .company-info {
+		width: 90%;
+		display: block;
+		text-align: left;
+		padding: 0px;
+		margin: 0px;
+		color: white;
+	}
+	footer .company-wrap span {
+		color: #78BFEA;
+	}
+	footer .company-wrap .owner-info-footer {
+		width: 100%;
+		margin-top: 60px;
+		text-align: left;
+	}
+	footer .company-wrap .owner-info-footer p {
+		text-align: left;
+	}
+	footer .input-logo-wrap {
+		width: 33%;
+		margin: 10px auto;
+		text-align: right;
+	}
+	footer .input-logo-wrap .owner-logo {
+		margin-top: 100px;
+	}
+	footer .input-logo-wrap .owner-logo img {
+		margin: initial;
+		margin-left: auto;
+		width: 50%;
+	}
+	footer .input-logo-wrap .mailing-list {
+		margin: unset;
+		margin-left: auto;
+	}
+	footer .input-logo-wrap .mailing-list input {
+		color: white;
+	}
+	footer .input-logo-wrap .mailing-list .clear {
+		width: 50%;
+		float: right;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.building-nav .build-wrap .bld-200, .building-nav .build-wrap .bld-300 {
+		width: 35%;
+	}
+	footer .footer-contact .footer-contact-img img {
+		width: 70%;
 	}
 }
 

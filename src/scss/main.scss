@@ -37,9 +37,17 @@ a:hover {
 }
 
 header {
-	margin: 20px auto;
 	text-align: center;
 	font-family: "BatonTurboWeb";
+	// position: fixed;
+	// top: 0%;
+	// position: -webkit-sticky;
+	z-index: 2;
+	width: 100%;
+	// height: 120px;
+	// border:  1px solid red;
+	max-width: 1200px;
+	margin: 20px auto;
 	
 	ul {
 		display: flex;
@@ -137,17 +145,13 @@ header {
 	margin-bottom: 20px;
 
 	.galleria-remixed {
-		// position: absolute;
-		// // top: 0%;
-		// left: 0;
-		width: 40%;
+
 		color: white;
 		font-size: 1.8rem;
-		// padding: 10px;
 		font-family: "BatonTurboWeb";
 
 		h1 {
-			padding: 10px;
+			padding: 0px 10px;
 		}
 
 
@@ -180,7 +184,6 @@ header {
 	.hero-copy {
 		width: 100%;
 		margin: 20px auto;
-
 		color: white;
 		font-family: "BatonTurboWeb";
 
@@ -188,18 +191,21 @@ header {
 		p {
 			font-size: .9rem;
 			line-height: 1.2; 
-			letter-spacing: .1em;
 		}
 
 		span {
 			color: #78BFEA;
+		}
+
+		.margin-text {
+			margin-top: 30px;
 		}
 	}
 }
 
 
 #img-carousel {
-	margin-bottom: 20px;
+	margin-top: 50px;
 
 	.carousel-indicators li {
 		border-radius: 50%;
@@ -212,14 +218,15 @@ header {
 		right: 80%;
 		text-align: left;
 		padding: 30px 20px;
-		background: rgba(0, 0, 0, 0.4);
+		background: rgba(85, 83, 83, 0.4);
 		bottom: 0px;
 		width: 26%;
 
 		h5 {
 			color: #78BFEA;
 			font-family: "BatonTurboWeb";
-			width: 30%;
+			width: 100%;
+			font-size: 2rem;
 		}
 	}
 }
@@ -228,6 +235,7 @@ header {
 	background: white;
 	width: 100%;
 	font-family: "BatonTurboWeb";
+	margin-top: 40px;
 
 
 	h3 {
@@ -240,18 +248,16 @@ header {
 	}
 
 	.build-wrap {
-		padding: 10px;
 
 		.bld-200, .bld-300, .bld-600 {
-			padding: 20px 0px;
+			padding: 10px;
 			font-family: "BatonTurboWeb";
-
-		
+			line-height: 1.2;
 		}
 
 		.bld-200-copy, .bld-300-copy {
 			margin-bottom: 10px;
-			line-height: 1.1;
+			line-height: 1.3;
 		}
 
 		.features-wrap {
@@ -272,10 +278,11 @@ header {
 			display: flex;
 			flex-direction: column;
 			width: 100%;
+			padding: 5px;
 
 			img {
 				width: 100%;
-				padding: 10px;
+				padding: 5px;
 			}
 
 			p {
@@ -284,7 +291,7 @@ header {
 		}
 
 		.learn-more {
-			padding: 10px 0px;
+			padding: 10px 10px;
 			border-bottom: 1px solid  #78BFEA;
 			font-family: "BatonTurboWeb";
 
@@ -304,10 +311,15 @@ header {
 			font-family: "BatonTurboWeb";
 			color: #78BFEA;
 			padding: 20px 10px 30px 10px;
-			letter-spacing: .05em;
-			line-height: 1.2em;
+			line-height: 1.3em;
 		}
 	}
+
+
+}
+
+.padding {
+	// padding: 50px;
 }
 
 .announcements {
@@ -319,13 +331,13 @@ header {
 		padding: 10px;
 		background: #78BFEA;
 		font-family: "BatonTurboWeb";
-		border-bottom: 1px solid black;
 	}
 
 	.announcements-text {
-		padding: 20px 10px;
+		padding: 40px 10px;
 		margin-top: 5px;
 		font-family: "BatonTurboWeb";
+		line-height: 1.2;
 	}
 
 	span {
@@ -333,7 +345,10 @@ header {
 	}
 
 	p {
-		letter-spacing: .03em;
+		padding: 20px 0px;
+	}
+	li {
+		padding: 5px 10px;
 	}
 
 	h4 {
@@ -356,12 +371,11 @@ header {
 		padding: 10px;
 		background: #78BFEA;
 		font-family: "BatonTurboWeb";
-		border-bottom: 1px solid black;
 	}
 
 
 	.owners-text {
-		padding: 20px 10px;
+		padding: 40px 10px;
 		margin-top: 5px;
 		font-family: "BatonTurboWeb";
 
@@ -378,7 +392,6 @@ header {
 		}
 
 		p {
-			letter-spacing: .03em;
 			line-height: 1.2em;
 			padding: 20px 0px;
 			text-overflow: initial;
@@ -420,10 +433,11 @@ footer {
 
 		input {
 			border: 1px solid white;
-			padding: 20px;
+			// padding: 20px;
 			background: #78BFEA;
 			color: #000000;
 			width: 100%;
+			height: 45px;
 			outline: none;
 			resize: horizontal;
 			margin-bottom: 20px;
@@ -441,7 +455,7 @@ footer {
 			background: #000000;
 			color: white;
 			font-family: "BatonTurboWeb";
-			padding: 10px 20px;
+			padding: 10px 30px;
 			border: 1px solid black;
 		}
 	}
@@ -453,24 +467,40 @@ footer {
 		background: #000000;
 		font-family: "BatonTurboWeb";
 
+		a {
+			color: white;
+		}
+
+		a:hover {
+			color: #78BFEA;
+		}
+
+
+
 		.footer-contact-img {
 			display: inline-block;
 			vertical-align: top;
 			width: 35%;
-			margin: 1em 1em 1em 0;
+			margin: 1em 1em 1em 1em;
 			
 			img {
 				width: 100%;
 			}
 		}
-		
+
 
 		.company-info {
+			display: none;
+		}
+		
+
+		.company-info-mobile {
 			display: inline-block;
 			width: 51%;
 			padding: 10px;
 			margin-left: 20px;
 			font-size: .9em;
+			margin: 1em 1em 1em 0;
 			
 
 			span {
@@ -482,6 +512,7 @@ footer {
 				font-family: "BatonTurboWeb";
 
 			}
+
 		}
 
 		.owner-info-footer {
@@ -492,6 +523,7 @@ footer {
 			}
 
 			p {
+				text-align: center;
 				color: white;
 				margin-bottom: 5px;
 				font-family: "BatonTurboWeb";
@@ -501,26 +533,30 @@ footer {
 
 		.owner-logo {
 			width: 100%;
-
+			text-align: center;
 			img {
-				width: 30%;
-				margin: auto;
+				width: 40%;
+				margin: 80px auto;
 				display: block;
+				clear: both;
+
 			}
 		}
 
 		.mailing-list {
-			width: 100%;
+			width: 80%;
 			position: relative;
 			margin: 40px auto;
 
+
 			input {
-				width: 70%;
+				width: 100%;
 				margin: auto;
 				background: #000000;
 				border: 1px solid white;
 				outline: none;
 				padding: 8.7px 15px;
+				color: white;
 			}
 
 			::placeholder {
@@ -529,14 +565,19 @@ footer {
 				color: white;
 			}
 
-			button {
+			.button {
 				background: #78BFEA;
 				color: black;
-				padding: 8px 15px; 
+				padding: 12px 15px; 
 				outline: none;
 				border: 1px solid white;
-				position: absolute;
+				// position: absolute;
 				font-size: .8em;
+			}
+
+			.clear {
+				width: 30%;
+				float: right;
 			}
 		}
 	}
@@ -548,30 +589,263 @@ footer {
 @media only screen and (min-width: 768px) {
 
 	header ul a {
-		font-size: 1.5rem;
+		font-size: 1.1rem;
 	}
 
 	.hero-wrap {
 		.galleria-remixed {
 			width: 20%;
 			position: absolute;
-			font-size: 1.5rem;
-
+			font-size: 2rem;
 		}
 		.hero-blurb {
 			align-items: center;
 			
 			.text-wrap-hero {
 				margin-top: 40px;
+				width: 55%;
+				padding: 0px 20px;
+				margin: auto;
 			}
 
 			h4 {
-				font-size: 3rem;
-				margin-bottom: 20px;
+				font-size: 3.9rem;
+				margin-bottom: 10px;
 				color: white;
+			}
+		}
+
+		.hero-copy {
+			width: 55%;
+			margin: auto;
+			padding: 10px 20px;
+		}
+	}
+
+	.building-nav {
+		padding: 10px;
+		.build-wrap {
+			.bld-200, .bld-300 {
+				width: 51%;
+				font-size: 2rem;
+				padding: 20px;
+			}
+	
+			.bld-img-wrap {
+				flex-direction: row;
+				width: 33%;
+				margin-left: 10px;
+			}
+
+			.learn-more {
+				padding: 0px 0px 20px 0px;
+				margin: 20px 20px;
+			}
+		}
+
+		.and-more-section {
+			width: 70%;
+			padding: 10px;
+			font-size: 1.5rem;
+		}
+
+		
+	}
+
+	.announcements {
+		 h1 {
+			 font-size: 1.2rem;
+			padding: 12px 20px;
+		 }
+
+		 h4 {
+			 font-size: 1.3rem;
+			 padding: 10px;
+		 }
+		 p {
+			 width: 50%;
+			 padding: 10px;
+		 }
+
+		 a {
+			 padding: 10px;
+		 }
+	}
+	
+	.owners-section {
+		position: relative;
+		h1 {
+			font-size: 1.2rem;
+			padding: 12px 20px;
+		}
+		.owners-text {
+
+			a {
+				position: absolute;
+				left: 33%;
+				top: 86%;
+			}
+			h4 {
+				font-size: 1.3rem;
+				padding: 10px;
+
+			}
+
+
+		}
+		.owner-wrap {
+			position: relative;
+			display: flex;
+			flex-direction: row;
+			margin: 20px 10px 20px 10px;
+
+
+			p {
+				padding: 0px;
+				line-height: 1.2;
+				width: 70%;
+			}
+
+			.img-wrap-owners {
+				margin-right: 20px;
+				width: 30%;
+
 			}
 		}
 	}
 
+	.mixtap-section {
+		height: 280px;	
+		position: relative;
+
+		.mixtape-wrap {
+			padding-top: 20px; 
+			h2 {
+				width: 30%;
+				padding: 20px;	
+				display: inline-block;
+				vertical-align: top;
+				margin-left: 20px;
+			}
 	
+			.input-wrap {
+				width: 65%;
+				display: inline-block;
+
+				input {
+					height: 150px;
+					width: 100%;
+				}
+
+				input::placeholder {	
+					padding: 20px;
+				}
+			}
+		}
+
+	}
+
+	footer {
+		.footer-contact {
+			height: 200px;
+			display: flex;
+			padding: 0px;
+			flex-direction: row;
+
+			.footer-contact-img {
+				width: 33%;
+				margin: 10px auto;
+				img {
+					width: 90%;
+					padding: 0px 20px;
+				}
+			}
+
+			.mailing-list {
+				button {
+					padding: 12px 15px;
+				}
+			}
+
+			.company-info-mobile {
+				display: none;
+			}
+	
+		}
+
+	
+		.company-wrap {
+			text-align: left;;
+			width: 33%;
+			margin: 10px auto;
+			font-size: .9rem;
+			line-height: 1.2;
+	
+
+			.company-info {
+				width: 90%;
+				display: block;
+				text-align: left;
+				padding: 0px;
+				margin: 0px;
+				color: white;
+			}
+
+			span {
+				color: #78BFEA;
+			}
+
+			.owner-info-footer {
+				width: 100%;
+				margin-top: 60px;
+				text-align: left;
+
+				p {
+					text-align: left;
+				}
+			}
+		}
+
+		.input-logo-wrap {
+			width: 33%;
+			margin: 10px auto;
+			text-align: right;
+
+
+			.owner-logo {
+			margin-top: 100px;
+				img {
+					margin: initial;
+					margin-left: auto;
+					width: 50%;	
+				}
+			}
+			
+			.mailing-list {
+				margin: unset;
+				margin-left: auto;
+
+				input {
+					color: white;
+				}
+
+				.clear {
+					width: 50%;
+					float: right;	
+				}
+			}
+		}
+	}
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+	.building-nav .build-wrap .bld-200, .building-nav .build-wrap .bld-300 {
+		width: 35%;
+	}
+	
+	footer .footer-contact .footer-contact-img img {
+		width: 70%;
+	}
 }
