@@ -81,10 +81,13 @@ a:hover {
 header {
 	text-align: center;
 	font-family: "BatonTurboWeb";
+	position: fixed;
+	top: 0%;
+	position: -webkit-sticky;
 	z-index: 2;
 	width: 100%;
+	background: #000000;
 	max-width: 1200px;
-	margin: 20px auto;
 }
 
 header ul {
@@ -95,6 +98,7 @@ header ul {
 	        flex-direction: row;
 	-webkit-box-pack: justify;
 	        justify-content: space-between;
+	margin-top: 20px;
 }
 
 header ul a {
@@ -181,11 +185,14 @@ header ul li {
 
 .hero-wrap {
 	width: 100%;
+	height: 80vh;
 	position: relative;
 	margin-bottom: 20px;
 }
 
 .hero-wrap .galleria-remixed {
+	position: absolute;
+	top: 18%;
 	color: white;
 	font-size: 1.8rem;
 	font-family: "BatonTurboWeb";
@@ -196,6 +203,8 @@ header ul li {
 }
 
 .hero-wrap .hero-blurb {
+	position: absolute;
+	top: 24%;
 	width: 100%;
 	padding: 10px;
 	margin: auto;
@@ -317,6 +326,7 @@ header ul li {
 .building-nav .build-wrap .bld-img-wrap img {
 	width: 100%;
 	padding: 5px;
+	align-self: center;
 }
 
 .building-nav .build-wrap .bld-img-wrap p {
@@ -644,18 +654,27 @@ footer .footer-contact .mailing-list .clear {
 	float: right;
 }
 
+#owners, #announcements {
+	margin-bottom: 60px;
+}
+
 @media only screen and (min-width: 768px) {
 	header ul a {
 		font-size: 1.1rem;
 	}
+	.hero-wrap {
+		height: 80vh;
+	}
 	.hero-wrap .galleria-remixed {
 		width: 20%;
+		top: 12%;
 		position: absolute;
 		font-size: 2rem;
 	}
 	.hero-wrap .hero-blurb {
 		-webkit-box-align: center;
 		        align-items: center;
+		top: 14%;
 	}
 	.hero-wrap .hero-blurb .text-wrap-hero {
 		margin-top: 40px;
@@ -676,6 +695,9 @@ footer .footer-contact .mailing-list .clear {
 	.building-nav {
 		padding: 10px;
 	}
+	.building-nav .build-wrap {
+		width: 100%;
+	}
 	.building-nav .build-wrap .bld-200, .building-nav .build-wrap .bld-300 {
 		width: 51%;
 		font-size: 2rem;
@@ -685,7 +707,7 @@ footer .footer-contact .mailing-list .clear {
 		-webkit-box-orient: horizontal;
 		-webkit-box-direction: normal;
 		        flex-direction: row;
-		width: 33%;
+		width: 33.33%;
 		margin-left: 10px;
 	}
 	.building-nav .build-wrap .learn-more {
@@ -721,7 +743,7 @@ footer .footer-contact .mailing-list .clear {
 	}
 	.owners-section .owners-text a {
 		position: absolute;
-		left: 33%;
+		left: 32%;
 		top: 86%;
 	}
 	.owners-section .owners-text h4 {
