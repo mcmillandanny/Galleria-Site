@@ -918,6 +918,12 @@ footer .footer-contact .mailing-list .clear {
 	padding: 0px 10px;
 }
 
+@media only screen and (min-width: 1000px) {
+	.bld-300-copy {
+		width: 50%;
+	}
+}
+
 .bld-300-copy {
 	padding: 10px;
 }
