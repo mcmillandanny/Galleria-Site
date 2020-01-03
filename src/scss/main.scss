@@ -30,6 +30,10 @@ a:hover {
 	text-decoration: none;
 }
 
+a {
+	text-decoration: none;
+}
+
 
 /////////////////////Header Styles///////////////////@at-root
 
@@ -907,4 +911,38 @@ footer {
 	footer .footer-contact .footer-contact-img img {
 		width: 70%;
 	}
+}
+
+
+//==========================Building 300 Styles=============================
+
+
+.hero-wrap-300, .hero-wrap-200 {
+	width: 30%;
+}
+
+.building-nav-300, .building-nav-200 {
+	margin-top: 90px;
+
+	.build-wrap {
+
+	.bld-300-page, .bld-200-page {
+		padding: 10px;
+		h3 {
+			padding: 10px;
+		}
+	}
+}	
+
+	h4 {
+		padding: 5px 10px;
+	}
+
+	p {
+		padding: 0px 10px;
+	}
+}
+
+.bld-300-copy {
+	padding: 10px;
 }

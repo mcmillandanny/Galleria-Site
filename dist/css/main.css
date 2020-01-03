@@ -75,6 +75,10 @@ a:hover {
 	text-decoration: none;
 }
 
+a {
+	text-decoration: none;
+}
+
 .content {
 	max-width: 1200px;
 	margin: auto;
@@ -888,6 +892,34 @@ footer .footer-contact .mailing-list .clear {
 	footer .footer-contact .footer-contact-img img {
 		width: 70%;
 	}
+}
+
+.hero-wrap-300, .hero-wrap-200 {
+	width: 30%;
+}
+
+.building-nav-300, .building-nav-200 {
+	margin-top: 90px;
+}
+
+.building-nav-300 .build-wrap .bld-300-page, .building-nav-300 .build-wrap .bld-200-page, .building-nav-200 .build-wrap .bld-300-page, .building-nav-200 .build-wrap .bld-200-page {
+	padding: 10px;
+}
+
+.building-nav-300 .build-wrap .bld-300-page h3, .building-nav-300 .build-wrap .bld-200-page h3, .building-nav-200 .build-wrap .bld-300-page h3, .building-nav-200 .build-wrap .bld-200-page h3 {
+	padding: 10px;
+}
+
+.building-nav-300 h4, .building-nav-200 h4 {
+	padding: 5px 10px;
+}
+
+.building-nav-300 p, .building-nav-200 p {
+	padding: 0px 10px;
+}
+
+.bld-300-copy {
+	padding: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */
