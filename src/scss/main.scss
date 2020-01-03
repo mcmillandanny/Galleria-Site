@@ -288,7 +288,7 @@ header {
 			display: flex;
 			flex-direction: column;
 			width: 100%;
-			padding: 5px;
+			padding: 5px; 
 
 			img {
 				width: 100%;
@@ -297,6 +297,19 @@ header {
 			}
 
 			p {
+				padding: 10px;
+			}
+
+			a {
+				width: 100%;
+			}
+
+		}
+
+		.lrg-imgs {
+
+			img {
+				width: 100%;
 				padding: 10px;
 			}
 		}
@@ -420,52 +433,47 @@ header {
 	}
 }
 
-footer {
+
+
+.mixtap-section {
 	width: 100%;
+	margin: auto;
+	padding: 20px 0px;
 	background: #78BFEA;
-
-
-	h2 {
-		font-family: "BatonTurboWeb";
-		font-size: 2rem;
-		width: 70%;
-		padding: 10px;
-
-	}
-	
-	.input-wrap {
+	margin-bottom: 40px;
+	.mixtape-wrap {
 		width: 80%;
 		margin: auto;
-		padding: 20px 0px;
-
-		input {
-			border: 1px solid white;
-			// padding: 20px;
-			background: #78BFEA;
-			color: #000000;
-			width: 100%;
-			height: 45px;
-			outline: none;
-			resize: horizontal;
-			margin-bottom: 20px;
-		}
-		::placeholder {
-			color: #000000;
+		text-align: center;
+		
+		h2 {
 			font-family: "BatonTurboWeb";
-			font-size: .8rem;
+			font-size: 1.3rem;
+			padding: 10px;
+			font-weight: bolder;
 		}
-
-		button {
-			float: right;
-			margin-bottom: 40px;
-			outline: none;
+		
+		a {
+			width: 50%;
+			display: block;
 			background: #000000;
 			color: white;
 			font-family: "BatonTurboWeb";
-			padding: 10px 30px;
+			padding: 10px 10px;
+			font-size: .1rem;
 			border: 1px solid black;
+			margin: 10px auto;
+		}
+		a:hover {
+			border: 1px solid #417B9D;
+			background: #417B9D;
 		}
 	}
+}
+
+footer {
+	width: 100%;
+	background: #78BFEA;
 
 	.footer-contact {
 		clear: both;
@@ -476,6 +484,18 @@ footer {
 
 		a {
 			color: white;
+
+		}
+
+		.mailing-btn {
+			color: black;
+			font-size: .4rem;
+			display: block;
+			background: #78BFEA;
+			width: 35%;
+			margin: auto;
+			text-align: center;
+			padding: 10px;
 		}
 
 		a:hover {
@@ -503,7 +523,7 @@ footer {
 
 		.company-info-mobile {
 			display: inline-block;
-			width: 51%;
+			width: 50%;
 			padding: 10px;
 			margin-left: 20px;
 			font-size: .9em;
@@ -594,35 +614,27 @@ footer {
 	margin-bottom: 60px;
 }
 
-#lightbox {
-    position:fixed; 
-    top:0%; 
-    left:0%; 
-    width:100%; 
-    height:100%; 
-    background: rgba(85, 83, 83, 0.4);
-	text-align:center;
-	z-index: 1000;;
-
-}
-
-#lightbox p {
-	text-align:right; 
-    color:#fff; 
-    margin-right:20px; 
-    font-size:12px; 
-}
-
-#lightbox img {
-	margin-top: 100px;
+.lightbox {
+	display: none;
+	position: fixed;
+	z-index: 999;
 	width: 100%;
-    box-shadow:0 0 25px #111;
-    -webkit-box-shadow:0 0 25px #111;
-    -moz-box-shadow:0 0 25px #111;
-	max-width: 1000px;
-	z-index: 1000;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+.lightbox img {
+	max-width: 90%;
+	max-height: 80%;
+	margin-top: 2%;
 }
 
+.lightbox:target {
+	outline: none;
+	display: block;
+}
 
 ////////Media Queries///////
 
@@ -680,8 +692,8 @@ footer {
 	
 			.bld-img-wrap {
 				flex-direction: row;
-				width: 33.33%;
-				margin-left: 10px;
+				// width: 33.33%;
+				// margin-left: 10px;
 			}
 
 			.learn-more {
@@ -763,44 +775,33 @@ footer {
 		}
 	}
 
+
 	.mixtap-section {
-		height: 280px;	
-		position: relative;
 
 		.mixtape-wrap {
-			padding-top: 20px; 
+			width: 75%;
+
 			h2 {
-				width: 30%;
-				padding: 20px;	
-				display: inline-block;
-				vertical-align: top;
-				margin-left: 20px;
+				font-size: 1.4rem;
 			}
-	
-			.input-wrap {
-				width: 65%;
-				display: inline-block;
-
-				input {
-					height: 150px;
-					width: 100%;
-				}
-
-				input::placeholder {	
-					padding: 20px;
-				}
+			a {
+				max-width: 300px;
+				font-size: .8rem;
 			}
 		}
 
 	}
 
+
 	footer {
+
 		.footer-contact {
 			height: 200px;
 			display: flex;
 			padding: 0px;
 			flex-direction: row;
 			margin-bottom: 50px;
+			// margin-top: 50px;
 
 			.footer-contact-img {
 				width: 33%;
@@ -812,9 +813,15 @@ footer {
 			}
 
 			.mailing-list {
-				button {
-					padding: 12px 15px;
+
+				.mailing-btn {
+					margin: 0px;
+					margin-left: auto;
+					width: 75%;
+					padding: 12px;
+					font-size: .8rem;
 				}
+
 			}
 
 			.company-info-mobile {

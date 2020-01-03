@@ -338,6 +338,15 @@ header ul li {
 	padding: 10px;
 }
 
+.building-nav .build-wrap .bld-img-wrap a {
+	width: 100%;
+}
+
+.building-nav .build-wrap .lrg-imgs img {
+	width: 100%;
+	padding: 10px;
+}
+
 .building-nav .build-wrap .learn-more {
 	padding: 10px 10px;
 	border-bottom: 1px solid  #78BFEA;
@@ -452,74 +461,47 @@ header ul li {
 	width: 100%;
 }
 
-footer {
+.mixtap-section {
 	width: 100%;
-	background: #78BFEA;
-}
-
-footer h2 {
-	font-family: "BatonTurboWeb";
-	font-size: 2rem;
-	width: 70%;
-	padding: 10px;
-}
-
-footer .input-wrap {
-	width: 80%;
 	margin: auto;
 	padding: 20px 0px;
-}
-
-footer .input-wrap input {
-	border: 1px solid white;
 	background: #78BFEA;
-	color: #000000;
-	width: 100%;
-	height: 45px;
-	outline: none;
-	resize: horizontal;
-	margin-bottom: 20px;
-}
-
-footer .input-wrap ::-webkit-input-placeholder {
-	color: #000000;
-	font-family: "BatonTurboWeb";
-	font-size: .8rem;
-}
-
-footer .input-wrap ::-moz-placeholder {
-	color: #000000;
-	font-family: "BatonTurboWeb";
-	font-size: .8rem;
-}
-
-footer .input-wrap :-ms-input-placeholder {
-	color: #000000;
-	font-family: "BatonTurboWeb";
-	font-size: .8rem;
-}
-
-footer .input-wrap ::-ms-input-placeholder {
-	color: #000000;
-	font-family: "BatonTurboWeb";
-	font-size: .8rem;
-}
-
-footer .input-wrap ::placeholder {
-	color: #000000;
-	font-family: "BatonTurboWeb";
-	font-size: .8rem;
-}
-
-footer .input-wrap button {
-	float: right;
 	margin-bottom: 40px;
-	outline: none;
+}
+
+.mixtap-section .mixtape-wrap {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+}
+
+.mixtap-section .mixtape-wrap h2 {
+	font-family: "BatonTurboWeb";
+	font-size: 1.3rem;
+	padding: 10px;
+	font-weight: bolder;
+}
+
+.mixtap-section .mixtape-wrap a {
+	width: 50%;
+	display: block;
 	background: #000000;
 	color: white;
 	font-family: "BatonTurboWeb";
-	padding: 10px 30px;
+	padding: 10px 10px;
+	font-size: .1rem;
 	border: 1px solid black;
+	margin: 10px auto;
+}
+
+.mixtap-section .mixtape-wrap a:hover {
+	border: 1px solid #417B9D;
+	background: #417B9D;
+}
+
+footer {
+	width: 100%;
+	background: #78BFEA;
 }
 
 footer .footer-contact {
@@ -532,6 +514,17 @@ footer .footer-contact {
 
 footer .footer-contact a {
 	color: white;
+}
+
+footer .footer-contact .mailing-btn {
+	color: black;
+	font-size: .4rem;
+	display: block;
+	background: #78BFEA;
+	width: 35%;
+	margin: auto;
+	text-align: center;
+	padding: 10px;
 }
 
 footer .footer-contact a:hover {
@@ -555,7 +548,7 @@ footer .footer-contact .company-info {
 
 footer .footer-contact .company-info-mobile {
 	display: inline-block;
-	width: 51%;
+	width: 50%;
 	padding: 10px;
 	margin-left: 20px;
 	font-size: .9em;
@@ -663,32 +656,27 @@ footer .footer-contact .mailing-list .clear {
 	margin-bottom: 60px;
 }
 
-#lightbox {
+.lightbox {
+	display: none;
 	position: fixed;
-	top: 0%;
-	left: 0%;
+	z-index: 999;
 	width: 100%;
 	height: 100%;
-	background: rgba(85, 83, 83, 0.4);
 	text-align: center;
-	z-index: 1000;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.8);
 }
 
-#lightbox p {
-	text-align: right;
-	color: #fff;
-	margin-right: 20px;
-	font-size: 12px;
+.lightbox img {
+	max-width: 90%;
+	max-height: 80%;
+	margin-top: 2%;
 }
 
-#lightbox img {
-	margin-top: 100px;
-	width: 100%;
-	box-shadow: 0 0 25px #111;
-	-webkit-box-shadow: 0 0 25px #111;
-	-moz-box-shadow: 0 0 25px #111;
-	max-width: 1000px;
-	z-index: 1000;
+.lightbox:target {
+	outline: none;
+	display: block;
 }
 
 @media only screen and (min-width: 768px) {
@@ -741,8 +729,6 @@ footer .footer-contact .mailing-list .clear {
 		-webkit-box-orient: horizontal;
 		-webkit-box-direction: normal;
 		        flex-direction: row;
-		width: 33.33%;
-		margin-left: 10px;
 	}
 	.building-nav .build-wrap .learn-more {
 		padding: 0px 0px 20px 0px;
@@ -803,42 +789,15 @@ footer .footer-contact .mailing-list .clear {
 		margin-right: 20px;
 		width: 30%;
 	}
-	.mixtap-section {
-		height: 280px;
-		position: relative;
-	}
 	.mixtap-section .mixtape-wrap {
-		padding-top: 20px;
+		width: 75%;
 	}
 	.mixtap-section .mixtape-wrap h2 {
-		width: 30%;
-		padding: 20px;
-		display: inline-block;
-		vertical-align: top;
-		margin-left: 20px;
+		font-size: 1.4rem;
 	}
-	.mixtap-section .mixtape-wrap .input-wrap {
-		width: 65%;
-		display: inline-block;
-	}
-	.mixtap-section .mixtape-wrap .input-wrap input {
-		height: 150px;
-		width: 100%;
-	}
-	.mixtap-section .mixtape-wrap .input-wrap input::-webkit-input-placeholder {
-		padding: 20px;
-	}
-	.mixtap-section .mixtape-wrap .input-wrap input::-moz-placeholder {
-		padding: 20px;
-	}
-	.mixtap-section .mixtape-wrap .input-wrap input:-ms-input-placeholder {
-		padding: 20px;
-	}
-	.mixtap-section .mixtape-wrap .input-wrap input::-ms-input-placeholder {
-		padding: 20px;
-	}
-	.mixtap-section .mixtape-wrap .input-wrap input::placeholder {
-		padding: 20px;
+	.mixtap-section .mixtape-wrap a {
+		max-width: 300px;
+		font-size: .8rem;
 	}
 	footer .footer-contact {
 		height: 200px;
@@ -858,8 +817,12 @@ footer .footer-contact .mailing-list .clear {
 		width: 90%;
 		padding: 0px 20px;
 	}
-	footer .footer-contact .mailing-list button {
-		padding: 12px 15px;
+	footer .footer-contact .mailing-list .mailing-btn {
+		margin: 0px;
+		margin-left: auto;
+		width: 75%;
+		padding: 12px;
+		font-size: .8rem;
 	}
 	footer .footer-contact .company-info-mobile {
 		display: none;
