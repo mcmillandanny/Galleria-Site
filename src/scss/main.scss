@@ -250,6 +250,14 @@ header {
 	width: 100%;
 	font-family: "BatonTurboWeb";
 	margin-top: 40px;
+	
+	.learn-more {
+		padding: 10px 10px;
+		border-bottom: 1px solid  #78BFEA;
+		font-family: "BatonTurboWeb";
+		margin: 0px 20px;
+
+	}
 
 
 	h3 {
@@ -338,7 +346,7 @@ header {
 		p {
 			font-family: "BatonTurboWeb";
 			color: #78BFEA;
-			padding: 20px 10px 30px 10px;
+			padding: 20px 10px 0px 10px;
 			line-height: 1.3em;
 		}
 	}
@@ -691,7 +699,7 @@ footer {
 			.bld-200, .bld-300 {
 				width: 51%;
 				font-size: 2rem;
-				padding: 20px;
+				padding: 30px 20px;
 			}
 	
 			.bld-img-wrap {

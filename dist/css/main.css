@@ -290,6 +290,13 @@ header ul li {
 	margin-top: 40px;
 }
 
+.building-nav .learn-more {
+	padding: 10px 10px;
+	border-bottom: 1px solid  #78BFEA;
+	font-family: "BatonTurboWeb";
+	margin: 0px 20px;
+}
+
 .building-nav h3 {
 	color: #78BFEA;
 }
@@ -370,7 +377,7 @@ header ul li {
 .building-nav .and-more-section p {
 	font-family: "BatonTurboWeb";
 	color: #78BFEA;
-	padding: 20px 10px 30px 10px;
+	padding: 20px 10px 0px 10px;
 	line-height: 1.3em;
 }
 
@@ -727,7 +734,7 @@ footer .footer-contact .mailing-list .clear {
 	.building-nav .build-wrap .bld-200, .building-nav .build-wrap .bld-300 {
 		width: 51%;
 		font-size: 2rem;
-		padding: 20px;
+		padding: 30px 20px;
 	}
 	.building-nav .build-wrap .bld-img-wrap {
 		-webkit-box-orient: horizontal;
